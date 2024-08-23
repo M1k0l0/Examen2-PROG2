@@ -47,7 +47,7 @@ public class Card {
 
     public Hotel findBestHotel(){
         for(Park p: parks){
-            if(p.getHotels())
+            if()
         }
     }
 

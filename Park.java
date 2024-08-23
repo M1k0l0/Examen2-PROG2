@@ -1,6 +1,7 @@
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 
@@ -59,12 +60,10 @@ public class Park extends Location{
         double cheapestPrice = 0;
         List<Hotel> cheapestHotels = new ArrayList();
         for (Park park : parks) {
-            cheapestHotels += park.getRooms().getPrice();
+            cheapestHotels += park.getPrice();
             cheapestHotels.add(cheapestHotels);
 
-            for(Hotel cheap : cheapestHotels){
-
-            }
+            Collection.sort(cheapestHotels);
         }
     }
 }
